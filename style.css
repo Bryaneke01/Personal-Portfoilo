@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body{
+    background: #1f1712;
+    color: white ;
+    font-family: "poppins",sans-serif ;
+
+}
+header{
+    position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 20px 10%;
+     background: transparent;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 100;
+
+}
+.Logo{
+    font-size: 30px;
+    color: #12a0aa;
+    text-decoration: none;
+    font-weight: 600;
+    
+
+}
+.nav_menu a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition:  .5s;
+}
+.nav_menu a:hover{
+    background: #097981;
+    padding: 7px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3rem;
+}
+.section_1{
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    padding:10%;
+    background: url(Image/Screen\ Shot\ 2024-03-11\ at\ 2.47.39\ PM.png) no-repeat;
+    background-size: cover; 
+    background-position: center;
+    
+}
+.Home_text{
+    /* background: green; */
+    max-width: 700px;
+}
+.Home_text h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.Home_text li{
+    font-size: 37px;
+    font-weight: 700;
+    color: #12a0aa;
+    text-shadow: 0 0 10px #12a0aa ;
+   list-style: none;
+   animation:  12s steps(4) infinite;
+}
+@keyframes slide {
+     100%{
+        top: 50rem;
+     }
+}
+.Home_text li span{
+    position: relative;
+}
+.Home_text li span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 465px;
+    height: 50px;
+    /* background: red; */
+    border-left: 2.5px solid #12a0aa;
+    animation: typing 1.5s steps(10) infinite alternate;
+    
+}
+@keyframes typing {
+    100%{
+        left: 87%;
+    }
+    
+}
+.Home_text p{
+    font-size: 16px;
+    margin: 20px 0 40px ;
+}
+.Home_text .btn-box{
+    justify-content: space-between;
+    display: flex;
+    width: 22rem;
+    height: 50px;
+    /* background: green; */
+    margin-top: 1rem;
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 150px;
+    height: 100%;
+    background: #097981;
+    border: 2px solid #12a0aa;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    font-weight: 600;
+    transition: .5s ease;
+    z-index:  1;
+    overflow: hidden;
+
+}
+.btn-box a:hover{
+    color: white;
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #12a0aa;
+}
+.btn-box a::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 0%;
+     height: 100%;
+     background:#12a0aa;
+     z-index: -1;
+     transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}.btn-box a:nth-child(2)::before{
+     background: #12a0aa;
+}
+.btn-box a:nth-child(2):hover{
+    color: white;
+}
+.Section_2{
+    background: red;
+    height: 50%;
+    width: 100%;
+    
+}
